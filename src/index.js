@@ -69,7 +69,7 @@ class Board extends React.Component {
 
     status = 'Next Player: ' + (xIsNext ? 'X' : 'O');
     if (turnCount > 8 && !winner) status = 'Game is a Draw!'
-    if (winner) status = winner + ' has WON!'
+    if (winner) status = 'Player ' + winner + ' has WON!'
 
     return (
       <div>
